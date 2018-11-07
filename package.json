@@ -1,0 +1,33 @@
+{
+  "name": "messenger-analytics",
+  "version": "1.0.0",
+  "description": "Facebook Analytics integration utility for Messenger bots",
+  "keywords": [
+    "analytics",
+    "bot",
+    "chatbot",
+    "facebook",
+    "facebook analytics",
+    "fba",
+    "measurement",
+    "messenger",
+    "messenger bot",
+    "messenger platform"
+  ],
+  "author": "Facebook Inc.",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": "github:facebookincubator/messenger-analytics-node",
+  "bugs": {
+    "url": "https://github.com/facebookincubator/messenger-analytics-node/issues"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0"
+  }
+}
