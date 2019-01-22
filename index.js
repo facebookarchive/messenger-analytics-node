@@ -53,6 +53,10 @@ class Logger {
       }
 
       let event = typeof customParams !== "undefined" ? customParams : {};
+      if (Object.keys(event).length > 24) {
+        // One slot is consumed by 'source' below, hence 25-1
+        reject("An event cannot have more than 25 parameters. See https://developers.facebook.com/docs/app-events/faq.");
+      }
       event["_eventName"] = eventName;
       event["source"] = "fba4m-node";
 
